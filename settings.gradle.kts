@@ -1,0 +1,1 @@
+rootProject.name = "com.example.sledi_our_pari"
