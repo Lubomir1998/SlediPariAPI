@@ -1,1 +1,1 @@
-web: ./build/install/ktor-get-started-sample/bin/ktor-get-started-sample
+web: ./build/install/com.example.sledi_our_pari/bin/com.example.sledi_our_pari
