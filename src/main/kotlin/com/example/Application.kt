@@ -9,7 +9,7 @@ import io.ktor.server.plugins.contentnegotiation.*
 import kotlinx.serialization.json.Json
 
 fun main() {
-    embeddedServer(Netty, port = 8080, host = "0.0.0.0") {
+    embeddedServer(Netty, port = 1926, host = "0.0.0.0") {
         configureRouting()
         install(ContentNegotiation) {
             json(Json {
