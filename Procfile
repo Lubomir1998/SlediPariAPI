@@ -1,1 +1,1 @@
-web:    java -jar build/libs/gradle-getting-started-1.0.jar
+web: ./build/install/ktor-get-started-sample/bin/ktor-get-started-sample
