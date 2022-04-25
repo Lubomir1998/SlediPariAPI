@@ -1,1 +1,0 @@
-web:    java -jar build/libs/ktor-game-0.0.1-SNAPSHOT-all.jar
