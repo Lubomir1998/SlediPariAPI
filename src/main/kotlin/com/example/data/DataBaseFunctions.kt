@@ -6,7 +6,6 @@ import org.bson.conversions.Bson
 import org.litote.kmongo.coroutine.coroutine
 import org.litote.kmongo.reactivestreams.KMongo
 import org.litote.kmongo.setValue
-import javax.imageio.plugins.tiff.ExifParentTIFFTagSet
 
 val client = KMongo.createClient().coroutine
 val database = client.getDatabase("Razhodi")
