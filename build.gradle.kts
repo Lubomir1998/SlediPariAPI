@@ -42,9 +42,9 @@ dependencies {
 tasks {
 
     create("stage").dependsOn("installDist")
-//    shadowJar {
-//        manifest {
-//            attributes(mapOf("Main-Class" to application.mainClassName))
-//        }
-//    }
+    shadowJar {
+        manifest {
+            attributes(mapOf("Main-Class" to application.mainClassName))
+        }
+    }
 }
