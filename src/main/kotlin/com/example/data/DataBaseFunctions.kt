@@ -7,7 +7,7 @@ import org.litote.kmongo.coroutine.coroutine
 import org.litote.kmongo.reactivestreams.KMongo
 import org.litote.kmongo.setValue
 
-val client = KMongo.createClient().coroutine
+val client = KMongo.createClient("mongodb+srv://mongo:IDQqjsCcHnNosPdX@spendings.gl3cz.mongodb.net/test").coroutine
 val database = client.getDatabase("Spendings")
 
 val months = database.getCollection<Month>()
