@@ -44,7 +44,7 @@ tasks {
     create("stage").dependsOn("installDist")
     shadowJar {
         manifest {
-            attributes(mapOf("Main-Class" to application.mainClassName))
+            attributes["Main-Class"] = "io.ktor.server.netty.EngineMain"
         }
     }
 }
