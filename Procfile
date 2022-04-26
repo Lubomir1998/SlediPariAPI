@@ -1,1 +1,1 @@
-web: .\build\libs\com.example.sledi_our_pari-0.0.1.jar
+web: ./build/libs/com.example.sledi_our_pari-0.0.1.jar
