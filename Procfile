@@ -1,1 +1,1 @@
-web:    ./build/install/com.example.sledi_our_pari/bin/qlqlqlcom.example.sledi_our_pari
+web: .\build\libs\com.example.sledi_our_pari-0.0.1.jar
