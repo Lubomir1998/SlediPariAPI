@@ -225,7 +225,11 @@ suspend fun getBson(id: String, expenses: Expenses, price: Float): Bson {
             cosmetics.other += price
             setValue(Month::cosmetics, cosmetics)
         }
-        Expenses.DOMPOTREBI -> setValue(Month::domPotrebi, price)
+        Expenses.DOMPOTREBI -> {
+            val domPotrebi = months.findOneById(id)!!.domPotrebi
+            val newPrice = domPotrebi + price
+            setValue(Month::domPotrebi, newPrice)
+        }
         Expenses.CLEAN-> {
             val preparati = months.findOneById(id)!!.preparati
             preparati.clean += price
