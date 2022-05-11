@@ -22,7 +22,7 @@ enum class Expenses(var title: String) {
     MEDICINE("medicine"),
     HIGIEN("higien"),
     OTHER("other"),
-    DOM_POTREBI("domPotrebi"),
+    DOMPOTREBI("domPotrebi"),
     CLEAN("clean"),
     WASH("wash"),
     MACHOVE("machove"),

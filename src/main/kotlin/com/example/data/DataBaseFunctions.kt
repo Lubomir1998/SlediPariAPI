@@ -48,7 +48,7 @@ fun insertMonthUtil(id: String, title: Expenses, price: Float): Month {
         Expenses.MACHOVE -> Month(machove = price, id = id)
         Expenses.FURNITURE -> Month(furniture = price, id = id)
         Expenses.TEHNIKA -> Month(tehnika = price, id = id)
-        Expenses.DOM_POTREBI -> Month(domPotrebi = price, id = id)
+        Expenses.DOMPOTREBI -> Month(domPotrebi = price, id = id)
         Expenses.EDUCATION -> Month(education = price, id = id)
         Expenses.ENTERTAINMENT -> Month(entertainment = price, id = id)
         Expenses.SUBSCRIPTIONS -> Month(subscriptions = price, id = id)
@@ -225,7 +225,7 @@ suspend fun getBson(id: String, expenses: Expenses, price: Float): Bson {
             cosmetics.other += price
             setValue(Month::cosmetics, cosmetics)
         }
-        Expenses.DOM_POTREBI -> setValue(Month::domPotrebi, price)
+        Expenses.DOMPOTREBI -> setValue(Month::domPotrebi, price)
         Expenses.CLEAN-> {
             val preparati = months.findOneById(id)!!.preparati
             preparati.clean += price
