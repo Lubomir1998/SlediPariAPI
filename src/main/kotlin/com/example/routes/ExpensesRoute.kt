@@ -44,7 +44,7 @@ fun Route.expenseRoute() {
                 val month = call.parameters["month"]
 
                 month?.let {
-                    call.respond(OK, getMonth(it)!!)
+                    call.respond(OK, getMonth(it))
                 } ?: call.respond(BadRequest)
             }
         }

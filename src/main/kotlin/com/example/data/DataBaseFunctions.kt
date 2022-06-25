@@ -24,9 +24,9 @@ suspend fun addExpense(request: PostExpenseRequest): Boolean {
 
 }
 
-suspend fun getMonth(month: String): Month? {
+suspend fun getMonth(month: String): Month {
 
-    return months.findOneById(month)
+    return months.findOneById(month) ?: Month(id = month)
 }
 
 suspend fun getAllMonths(): List<Month> {
